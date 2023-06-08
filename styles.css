@@ -8,6 +8,32 @@ h1{
     font-weight: 700 !important;
 }
 
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container a{
+    background-color: #F1C293;
+    color: white;
+    height: 40px;
+    border: none;
+    width: 120px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button-container a:hover{
+    display: flex;
+    /* border: 2px solid white; */
+    scale: 1.05;
+}
+
 h2, h3, h5, h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400 !important; /* Bold */
@@ -65,7 +91,7 @@ h4 {
 }
 
 .space{
-    height: 100px;
+    height: 50px;
 }
 
 .video-player{
