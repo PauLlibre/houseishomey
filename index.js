@@ -81,3 +81,6 @@ function onYouTubePlayerAPIReady() {
     players.push(player);
   });
 }
+
+// SUNRISE ANIMATION
+

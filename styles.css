@@ -1,4 +1,6 @@
 body {
+    padding: 0;
+    margin: 0;
     background-color: black;
     font-family: 'Montserrat', sans-serif;
     color: #F1C293;
@@ -6,12 +8,15 @@ body {
 
 h1{
     font-weight: 700 !important;
+    font-size: 4rem;
+    z-index: 1;
 }
 
 .button-container{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .button-container a{
@@ -26,6 +31,16 @@ h1{
     justify-content: center;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
+}
+
+.header-torres{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    max-width: 100vw;
+    max-height: 400px;
+    z-index: 0;
 }
 
 .button-container a:hover{
@@ -43,23 +58,37 @@ h4 {
     font-size: 0.8rem;
     font-weight: 400 !important;
     font-style: italic;
+    z-index: 1;
 }
 
 .header{
+    background-color: rgb(169, 139, 139);
+    position: relative;
     width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 50vh;
 }
 
 .title{
-    font-weight:lighter
+    font-weight:lighter;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .navbar {
+    background-color: rgb(169, 139, 139);
+
     display: flex;
     width: auto;
+}
+
+.soft {
+    background-color: rgb(169, 139, 139);
+    color: black;
+    font-weight: bold;
 }
 
 .navbar ul {
@@ -83,11 +112,28 @@ h4 {
 }
 
 .body{
+    background-color: black;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
-    height: auto;
+    
+    height: fit-content;
+    padding-bottom: 100px;
+}
+
+@media (max-width: 767px) {
+    .body{
+        background-color: rgb(212, 205, 205);
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        width: 100%;
+        gap: 40px;
+        height: fit-content;
+        padding-bottom: 100px;
+    }
 }
 
 .space{
@@ -132,6 +178,12 @@ h4 {
     animation: scroll-left 15s linear infinite;
 }
 
+.scrolling-text-wrapper-right {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-left 15s linear infinite;
+}
+
 .scrolling-text {
     display: inline-block;
     padding-right: 50px;
@@ -146,16 +198,27 @@ h4 {
     }
 }
 
+@keyframes scroll-right {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(160%);
+    }
+}
+
 
 
 /* EVENTS */
 
 .events{
+    background-color: rgb(169, 139, 139);
     display: flex;
-    margin-top: 100px;
+    padding-top: 60px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 150px;
 }
 
 .event-cards-container{
@@ -173,7 +236,11 @@ h4 {
     background-size: cover;
 }
 
-
+.footer{
+    min-height: 200px;
+    background-color: black;
+    width: 100%;
+}
 
 
 /* #loading-container {
