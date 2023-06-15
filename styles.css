@@ -1,9 +1,18 @@
+@font-face {
+    font-family: 'Circus Of Innocents';  /* Choose a suitable name for your font */
+    src: url('fonts/Circus_Of_Innocents.ttf') format('truetype');
+  }
+
 body {
     padding: 0;
     margin: 0;
     background-color: black;
-    font-family: 'Montserrat', sans-serif;
-    color: #F1C293;
+    font-family: 'Circus Of Innocents', sans-serif;
+    color: white;
+}
+
+.title-logo{
+    width: 400px;
 }
 
 h1{
@@ -20,8 +29,8 @@ h1{
 }
 
 .button-container a{
-    background-color: #F1C293;
-    color: white;
+    background-color: white;
+    color: #8259FB;
     height: 40px;
     border: none;
     width: 120px;
@@ -30,7 +39,7 @@ h1{
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Circus Of Innocents', sans-serif;
 }
 
 .header-torres{
@@ -62,7 +71,7 @@ h4 {
 }
 
 .header{
-    background-color: rgb(169, 139, 139);
+    background-color: white;
     position: relative;
     width: auto;
     display: flex;
@@ -70,6 +79,7 @@ h4 {
     align-items: center;
     justify-content: center;
     min-height: 50vh;
+    max-height: 60vh;
 }
 
 .title{
@@ -79,15 +89,15 @@ h4 {
 }
 
 .navbar {
-    background-color: rgb(169, 139, 139);
-
+    background-color: white;
+    color: #BE81F7;
     display: flex;
     width: auto;
 }
 
 .soft {
-    background-color: rgb(169, 139, 139);
-    color: black;
+    background-color: black;
+    color: #8259FB;
     font-weight: bold;
 }
 
@@ -102,8 +112,8 @@ h4 {
 }
 
 .navbar ul li a{
-    color: #F1C293;
     text-decoration: none;
+    color: #8259FB;
 }
 
 .navbar ul li a:hover{
@@ -112,6 +122,8 @@ h4 {
 }
 
 .body{
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
     background-color: black;
     display: flex;
     justify-content: space-around;
@@ -212,7 +224,11 @@ h4 {
 /* EVENTS */
 
 .events{
-    background-color: rgb(169, 139, 139);
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+
+    background-color: #8259FB;
+    color: white;
     display: flex;
     padding-top: 60px;
     flex-direction: column;
